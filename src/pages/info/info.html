@@ -1,0 +1,16 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>{{title}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content>
+    <ion-card *ngFor="let page of info">
+      <ion-card-header> {{ page.canteen }}  </ion-card-header>
+      <ion-card-content> {{ page.content }}</ion-card-content>
+  </ion-card>
+  </ion-content>

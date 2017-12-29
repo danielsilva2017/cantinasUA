@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cantinas UA
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button ion-button block *ngFor="let dia of food" (click)="getInfo(dia)" color="light">
+      {{ dia.title }}
+    </button>
+</ion-content>
+
